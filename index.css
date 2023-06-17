@@ -1,37 +1,14 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    background: url(https://raw.githubusercontent.com/qmgbk/tnextone/main/image-processing-begin-service.gif) no-repeat 50% 50%;
-    background-size: cover;
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
 }
 
-#loader {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    overflow: visible;
-    background: #fff url('https://raw.githubusercontent.com/qmgbk/tnextone/main/image-processing-begin-service.gif') no-repeat center center;
-}
-
-h1 {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: poppins;
-}
-
-.js div#preloader-gif {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    background: #333 url(https://raw.githubusercontent.com/qmgbk/tnextone/main/image-processing-begin-service.gif) no-repeat center center;
-}
+//-- usage --//
+preload(
+    "https://raw.githubusercontent.com/qmgbk/tnextone/main/image-processing-begin-service.gif",
+    "https://raw.githubusercontent.com/qmgbk/monday.ma/main/-ENTER%20DEVELOPER%20ENVIRONMENT%20WORKSPACE-.png",
+    "https://raw.githubusercontent.com/qmgbk/monday.ma/main/-ENTER%20DEVELOPER%20ENVIRONMENT%20WORKSPACE-.png" href="https://#"
+)
